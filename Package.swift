@@ -11,7 +11,7 @@ let package = Package(
     dependencies:[
         .package(url:"https://github.com/grupopulpo/material-text-accessibility-ios", from: "2.0.0"),
         //.package(url:"https://github.com/grupopulpo/material-internationalization-ios", from: "2.0.0"),
-        .package(url: "https://github.com/oncallhealth/material-internationalization-ios", from: "2.1"),
+        .package(url: "https://github.com/oncallhealth/material-internationalization-ios", from: "2.2.0"),
 //        .package(url: "https://github.com/oncallhealth/material-text-accessibility-ios", .branch("db/swiftpackagemanager"))
     ],
     targets: [
