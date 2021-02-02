@@ -10,7 +10,7 @@ let package = Package(
     ],
     dependencies:[
         .package(url: "https://github.com/oncallhealth/material-internationalization-ios", .branch("db/swiftpackagemanager")),
-        .package(url: "https://github.com/oncallhealth/material-internationalization-ios", .branch("db/swiftpackagemanager"))
+        .package(url: "https://github.com/material-foundation/material-text-accessibility-ios", .branch("db/swiftpackagemanager"))
     ],
     targets: [
         .target(name: "MaterialTextFields",
