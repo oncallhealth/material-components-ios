@@ -21,7 +21,7 @@ let package = Package(
                     .target(name: "Palettes"),
                     .target(name: "Typography"),
                     .target(name: "Math"),
-                    "MDFInternationalization"
+                    .product(name: "MDFInternationalization", package: "material-internationalization-ios")
                 ],
                 path: "components/TextFields/src",
                 exclude: [
