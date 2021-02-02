@@ -74,10 +74,6 @@ let package = Package(
             path: "components/Availability/src",
             publicHeadersPath: "."),
         .target(
-            name: "AvailabilityT",
-            path: "components/AvailabilityT/src",
-            publicHeadersPath: "."),
-        .target(
             name: "Color",
             path: "components/schemes/Color/src",
             publicHeadersPath: "."),
@@ -107,7 +103,7 @@ let package = Package(
             name: "Ripple",
             dependencies: [
                 .target(name: "AnimationTiming"),
-                .target(name: "AvailabilityT"),
+                .target(name: "Availability"),
                 .target(name: "Color"),
                 .target(name: "Math")
             ],
