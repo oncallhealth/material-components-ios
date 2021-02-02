@@ -32,8 +32,8 @@ let package = Package(
         .target(
             name: "Buttons",
             dependencies: [
-                "MDFInternationalization",
-                "MDFTextAccessibility",
+                .product(name: "MDFInternationalization", package: "material-internationalization-ios"),
+                .product(name: "MDFTextAccessibility", package: "material-text-accessibility-ios"),
                 .target(name: "Elevation"),
                 .target(name: "Ink"),
                 .target(name: "Ripple"),
@@ -146,7 +146,7 @@ let package = Package(
             dependencies: [
                 .target(name: "Application"),
                 .target(name: "Math"),
-                "MDFTextAccessibility"
+                .product(name: "MDFTextAccessibility", package: "material-text-accessibility-ios")
             ],
             path: "components/Typography/src",
             publicHeadersPath: ".")
