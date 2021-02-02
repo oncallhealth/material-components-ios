@@ -21,7 +21,7 @@ let package = Package(
                     .target(name: "Palettes"),
                     .target(name: "Typography"),
                     .target(name: "Math"),
-                    .product(name: "MDFInternationalization", package: "material-internationalization-ios")
+                    "MDFInternationalization"
                 ],
                 path: "components/TextFields/src",
                 exclude: [
@@ -32,8 +32,8 @@ let package = Package(
         .target(
             name: "Buttons",
             dependencies: [
-                .product(name: "MDFInternationalization", package: "material-internationalization-ios"),
-                .product(name: "MDFTextAccessibility", package: "material-text-accessibility-ios"),
+                "MDFInternationalization",
+                "MDFTextAccessibility",
                 .target(name: "Elevation"),
                 .target(name: "Ink"),
                 .target(name: "Ripple"),
@@ -142,7 +142,7 @@ let package = Package(
             dependencies: [
                 .target(name: "Application"),
                 .target(name: "Math"),
-                .product(name: "MDFTextAccessibility", package: "material-text-accessibility-ios")
+                "MDFTextAccessibility"
             ],
             path: "components/Typography/src",
             publicHeadersPath: ".")
