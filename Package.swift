@@ -10,11 +10,11 @@ let package = Package(
     ],
     dependencies:[
         .package(url: "https://github.com/oncallhealth/material-internationalization-ios", .branch("db/swiftpackagemanager")),
-        .package(url: "https://github.com/material-foundation/material-text-accessibility-ios", .branch("db/swiftpackagemanager"))
+        .package(url: "https://github.com/oncallhealth/material-text-accessibility-ios", .branch("db/swiftpackagemanager"))
     ],
     targets: [
         .target(name: "MaterialTextFields",
-                dependencies:[
+                dependencies: [
                     .target(name: "AnimationTiming"),
                     .target(name: "Buttons"),
                     .target(name: "Elevation"),
